@@ -1,0 +1,67 @@
+# Farcaster Prediction Market - Project Rules
+
+## Project Overview
+This is a decentralized prediction market for Farcaster user statistics built on Base blockchain.
+
+## Key Technologies
+- Solidity 0.8.20 for smart contracts
+- Next.js 14 with App Router
+- TypeScript for type safety
+- TailwindCSS for styling
+- Wagmi + ConnectKit for wallet connections
+- Neynar API for Farcaster data
+
+## Smart Contract Rules
+- Always use OpenZeppelin libraries for security
+- Include ReentrancyGuard on state-changing functions
+- Use events for all important actions
+- Follow checks-effects-interactions pattern
+- Gas optimization is important
+
+## Frontend Rules
+- Use TypeScript strict mode
+- Follow Next.js App Router conventions
+- Use server components where possible
+- Client components only when needed
+- Responsive mobile-first design
+
+## Fee Structure (DO NOT CHANGE)
+- BASE_FEE = 0.0002 ETH (~$0.20)
+- WINNING_FEE_PERCENT = 150 basis points (1.5%)
+- All fees go to FEE_COLLECTOR_ADDRESS
+
+## Environment Variables
+- Never commit .env file
+- Always use .env.example as template
+- Validate all env vars at startup
+
+## API Routes
+- Return proper HTTP status codes
+- Use TypeScript types for request/response
+- Include error handling
+- Add CORS headers where needed
+
+## Testing
+- Always test on Base Sepolia before mainnet
+- Test all bet types
+- Verify fee collection
+- Check resolution logic
+
+## Security
+- Validate all user inputs
+- Sanitize Farcaster IDs
+- Check for overflow/underflow
+- Rate limit API endpoints
+- Use secure RPC endpoints
+
+## Documentation
+- Keep README.md updated
+- Document all API endpoints
+- Explain complex functions
+- Include deployment steps
+
+## Git Workflow
+- Use descriptive commit messages
+- Don't commit node_modules or artifacts
+- Keep .gitignore updated
+- Tag releases properly
